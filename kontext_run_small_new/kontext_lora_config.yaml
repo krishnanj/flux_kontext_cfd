@@ -1,0 +1,75 @@
+job: extension
+config:
+  name: "flux_kontext_fludyn_lora"
+  process:
+    - type: 'sd_trainer'
+      training_folder: "output"
+      device: cuda:0
+      trigger_word: "fludyn"
+      network:
+        type: "lora"
+        linear: 16
+        linear_alpha: 16
+      save:
+        dtype: float16
+        save_every: 250
+        max_step_saves_to_keep: 4
+        push_to_hub: false
+      datasets:
+        - folder_path: "kontext_run_small_new/after"
+          control_path: "kontext_run_small_new/before"
+          caption_ext: "txt"
+          caption_dropout_rate: 0.05
+          shuffle_tokens: false
+          cache_latents_to_disk: true
+          resolution: [ 512, 768 ]
+      train:
+        batch_size: 1
+        steps: 3000
+        gradient_accumulation_steps: 1
+        train_unet: true
+        train_text_encoder: false
+        gradient_checkpointing: true
+        noise_scheduler: "flowmatch"
+        optimizer: "adamw8bit"
+        lr: 1e-4
+        timestep_type: "weighted"
+        dtype: bf16
+      model:
+        name_or_path: "black-forest-labs/FLUX.1-Kontext-dev"
+        arch: "flux_kontext"
+        quantize: true
+      sample:
+        sampler: "flowmatch"
+        sample_every: 250
+        width: 1024
+        height: 1024
+        prompts:
+          - "fludyn edit: change airfoil from NACA20500_11 to NACA010608; keep variable=nut, AoA≈8.21, V≈65.084  --ctrl_img kontext_run_small_new/test/test_000.png"
+          - "fludyn edit: change airfoil from NACA000308 to NACA030409; keep variable=u_x, AoA≈9.47, V≈39.849  --ctrl_img kontext_run_small_new/test/test_001.png"
+          - "fludyn edit: change airfoil from NACA10401_11 to NACA20400_15; keep variable=u_y, AoA≈12.07, V≈70.964  --ctrl_img kontext_run_small_new/test/test_002.png"
+          - "fludyn edit: change airfoil from NACA000114 to NACA050011; keep variable=pressure, AoA≈12.10, V≈89.333  --ctrl_img kontext_run_small_new/test/test_003.png"
+          - "fludyn edit: change airfoil from NACA030409 to NACA10300_06; keep variable=u_x, AoA≈10.12, V≈40.817  --ctrl_img kontext_run_small_new/test/test_004.png"
+          - "fludyn edit: change airfoil from NACA20701_08 to NACA30401_19; keep variable=nut, AoA≈-4.27, V≈58.245  --ctrl_img kontext_run_small_new/test/test_005.png"
+          - "fludyn edit: change airfoil from NACA20500_16 to NACA20300_05; keep variable=nut, AoA≈4.10, V≈61.061  --ctrl_img kontext_run_small_new/test/test_006.png"
+          - "fludyn edit: change airfoil from NACA050508 to NACA00500_09; keep variable=u_y, AoA≈-1.66, V≈60.209  --ctrl_img kontext_run_small_new/test/test_007.png"
+          - "fludyn edit: change airfoil from NACA000114 to NACA020214; keep variable=u_x, AoA≈11.31, V≈89.162  --ctrl_img kontext_run_small_new/test/test_008.png"
+          - "fludyn edit: change airfoil from NACA040011 to NACA10501_08; keep variable=pressure, AoA≈12.43, V≈68.560  --ctrl_img kontext_run_small_new/test/test_009.png"
+          - "fludyn edit: change airfoil from NACA30300_19 to NACA00700_06; keep variable=u_x, AoA≈0.00, V≈59.875  --ctrl_img kontext_run_small_new/test/test_010.png"
+          - "fludyn edit: change airfoil from NACA060212 to NACA060016; keep variable=nut, AoA≈11.82, V≈34.383  --ctrl_img kontext_run_small_new/test/test_011.png"
+          - "fludyn edit: change airfoil from NACA020214 to NACA000114; keep variable=u_y, AoA≈11.31, V≈89.162  --ctrl_img kontext_run_small_new/test/test_012.png"
+          - "fludyn edit: change airfoil from NACA040011 to NACA20400_15; keep variable=u_x, AoA≈12.43, V≈71.424  --ctrl_img kontext_run_small_new/test/test_013.png"
+          - "fludyn edit: change airfoil from NACA010608 to NACA20500_11; keep variable=u_y, AoA≈8.21, V≈65.084  --ctrl_img kontext_run_small_new/test/test_014.png"
+          - "fludyn edit: change airfoil from NACA20500_11 to NACA030507; keep variable=pressure, AoA≈8.64, V≈63.808  --ctrl_img kontext_run_small_new/test/test_015.png"
+          - "fludyn edit: change airfoil from NACA00500_14 to NACA040415; keep variable=pressure, AoA≈2.72, V≈42.001  --ctrl_img kontext_run_small_new/test/test_016.png"
+          - "fludyn edit: change airfoil from NACA020609 to NACA20500_06; keep variable=nut, AoA≈0.29, V≈65.597  --ctrl_img kontext_run_small_new/test/test_017.png"
+          - "fludyn edit: change airfoil from NACA00701_06 to NACA30501_18; keep variable=nut, AoA≈-1.52, V≈35.585  --ctrl_img kontext_run_small_new/test/test_018.png"
+          - "fludyn edit: change airfoil from NACA010215 to NACA00700_11; keep variable=u_y, AoA≈7.78, V≈69.132  --ctrl_img kontext_run_small_new/test/test_019.png"
+        neg: ""
+        seed: 42
+        walk_seed: true
+        guidance_scale: 4
+        sample_steps: 20
+meta:
+  name: "[name]"
+  version: '1.0'

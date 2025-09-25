@@ -1,0 +1,1 @@
+fludyn edit: change airfoil from NACA040011 to NACA10501_08; keep variable=pressure, AoA≈12.43, V≈68.560

@@ -1,0 +1,1 @@
+fludyn edit: change airfoil from NACA30300_19 to NACA00700_06; keep variable=u_x, AoA≈0.00, V≈59.875

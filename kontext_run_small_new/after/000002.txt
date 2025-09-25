@@ -1,0 +1,1 @@
+fludyn edit: change airfoil from NACA00701_06 to NACA30501_18; keep variable=nut, AoA≈-1.52, V≈35.585

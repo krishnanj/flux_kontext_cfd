@@ -1,0 +1,535 @@
+Analysis of 260 sample pairs across 13 iterations
+Samples: output_fludyn/samples
+Ground truth: kontext_run_small_new/test_results
+
+=== OVERALL SUMMARY ===
+MSE:
+  mean:   0.002643
+  median: 0.002195
+  std:    0.001766
+  min:    0.000189
+  max:    0.009732
+
+PSNR:
+  mean:   26.681398
+  median: 26.586114
+  std:    2.904403
+  min:    20.118187
+  max:    37.233292
+
+SSIM:
+  mean:   0.969334
+  median: 0.976542
+  std:    0.017055
+  min:    0.921496
+  max:    0.988157
+
+MAE:
+  mean:   0.014121
+  median: 0.012555
+  std:    0.009624
+  min:    0.005657
+  max:    0.088704
+
+LPIPS:
+  mean:   0.022234
+  median: 0.018733
+  std:    0.011801
+  min:    0.004851
+  max:    0.058405
+
+=== ITERATION 0 SUMMARY ===
+MSE:
+  mean:   0.003656
+  median: 0.002947
+  std:    0.002031
+  min:    0.001193
+  max:    0.008390
+
+PSNR:
+  mean:   25.012964
+  median: 25.306289
+  std:    2.364239
+  min:    20.762165
+  max:    29.233330
+
+SSIM:
+  mean:   0.965171
+  median: 0.973684
+  std:    0.018633
+  min:    0.921496
+  max:    0.981998
+
+MAE:
+  mean:   0.018831
+  median: 0.016140
+  std:    0.014790
+  min:    0.008622
+  max:    0.081236
+
+LPIPS:
+  mean:   0.026969
+  median: 0.025651
+  std:    0.010801
+  min:    0.012218
+  max:    0.056854
+
+=== ITERATION 250 SUMMARY ===
+MSE:
+  mean:   0.003822
+  median: 0.002864
+  std:    0.002443
+  min:    0.001187
+  max:    0.009732
+
+PSNR:
+  mean:   25.048052
+  median: 25.438148
+  std:    2.748278
+  min:    20.118187
+  max:    29.257032
+
+SSIM:
+  mean:   0.967379
+  median: 0.974247
+  std:    0.016271
+  min:    0.929494
+  max:    0.983400
+
+MAE:
+  mean:   0.018518
+  median: 0.015189
+  std:    0.016504
+  min:    0.007260
+  max:    0.088704
+
+LPIPS:
+  mean:   0.026684
+  median: 0.022304
+  std:    0.011336
+  min:    0.013016
+  max:    0.058405
+
+=== ITERATION 500 SUMMARY ===
+MSE:
+  mean:   0.002991
+  median: 0.002234
+  std:    0.002132
+  min:    0.000657
+  max:    0.009672
+
+PSNR:
+  mean:   26.182327
+  median: 26.510641
+  std:    2.842032
+  min:    20.144852
+  max:    31.824965
+
+SSIM:
+  mean:   0.969516
+  median: 0.975380
+  std:    0.015186
+  min:    0.931295
+  max:    0.984982
+
+MAE:
+  mean:   0.016809
+  median: 0.012767
+  std:    0.016630
+  min:    0.007051
+  max:    0.087832
+
+LPIPS:
+  mean:   0.023395
+  median: 0.019218
+  std:    0.011300
+  min:    0.009180
+  max:    0.052787
+
+=== ITERATION 750 SUMMARY ===
+MSE:
+  mean:   0.002846
+  median: 0.002496
+  std:    0.001511
+  min:    0.000697
+  max:    0.006623
+
+PSNR:
+  mean:   26.053221
+  median: 26.027277
+  std:    2.317506
+  min:    21.789579
+  max:    31.566011
+
+SSIM:
+  mean:   0.967963
+  median: 0.974998
+  std:    0.016989
+  min:    0.924430
+  max:    0.983537
+
+MAE:
+  mean:   0.015729
+  median: 0.013198
+  std:    0.009424
+  min:    0.008506
+  max:    0.054367
+
+LPIPS:
+  mean:   0.024284
+  median: 0.019369
+  std:    0.012005
+  min:    0.010249
+  max:    0.056496
+
+=== ITERATION 1000 SUMMARY ===
+MSE:
+  mean:   0.002463
+  median: 0.002332
+  std:    0.001439
+  min:    0.000551
+  max:    0.006675
+
+PSNR:
+  mean:   26.796544
+  median: 26.322644
+  std:    2.542967
+  min:    21.755457
+  max:    32.584900
+
+SSIM:
+  mean:   0.969312
+  median: 0.975819
+  std:    0.017146
+  min:    0.924841
+  max:    0.985890
+
+MAE:
+  mean:   0.014803
+  median: 0.013379
+  std:    0.006175
+  min:    0.007456
+  max:    0.035773
+
+LPIPS:
+  mean:   0.021445
+  median: 0.017454
+  std:    0.011712
+  min:    0.008299
+  max:    0.049935
+
+=== ITERATION 1250 SUMMARY ===
+MSE:
+  mean:   0.002910
+  median: 0.002146
+  std:    0.001539
+  min:    0.001422
+  max:    0.006657
+
+PSNR:
+  mean:   25.868737
+  median: 26.690031
+  std:    2.009380
+  min:    21.767342
+  max:    28.471395
+
+SSIM:
+  mean:   0.967915
+  median: 0.974525
+  std:    0.016393
+  min:    0.926276
+  max:    0.982207
+
+MAE:
+  mean:   0.015402
+  median: 0.012332
+  std:    0.011078
+  min:    0.007242
+  max:    0.060909
+
+LPIPS:
+  mean:   0.024264
+  median: 0.021026
+  std:    0.010907
+  min:    0.012948
+  max:    0.054050
+
+=== ITERATION 1500 SUMMARY ===
+MSE:
+  mean:   0.002511
+  median: 0.002248
+  std:    0.001455
+  min:    0.000713
+  max:    0.006620
+
+PSNR:
+  mean:   26.682197
+  median: 26.484733
+  std:    2.456612
+  min:    21.791336
+  max:    31.470490
+
+SSIM:
+  mean:   0.968874
+  median: 0.976116
+  std:    0.017276
+  min:    0.928442
+  max:    0.984442
+
+MAE:
+  mean:   0.012558
+  median: 0.012190
+  std:    0.003618
+  min:    0.006589
+  max:    0.020098
+
+LPIPS:
+  mean:   0.021654
+  median: 0.018055
+  std:    0.011259
+  min:    0.009180
+  max:    0.050937
+
+=== ITERATION 1750 SUMMARY ===
+MSE:
+  mean:   0.002017
+  median: 0.001773
+  std:    0.001313
+  min:    0.000189
+  max:    0.005419
+
+PSNR:
+  mean:   28.052710
+  median: 27.511849
+  std:    3.462993
+  min:    22.661150
+  max:    37.233292
+
+SSIM:
+  mean:   0.971911
+  median: 0.979237
+  std:    0.016527
+  min:    0.931482
+  max:    0.986013
+
+MAE:
+  mean:   0.011750
+  median: 0.011284
+  std:    0.003132
+  min:    0.006493
+  max:    0.017700
+
+LPIPS:
+  mean:   0.019214
+  median: 0.017410
+  std:    0.011582
+  min:    0.004851
+  max:    0.051251
+
+=== ITERATION 2000 SUMMARY ===
+MSE:
+  mean:   0.002304
+  median: 0.002103
+  std:    0.001461
+  min:    0.000526
+  max:    0.007512
+
+PSNR:
+  mean:   27.075581
+  median: 26.775873
+  std:    2.457560
+  min:    21.242258
+  max:    32.791336
+
+SSIM:
+  mean:   0.969503
+  median: 0.978955
+  std:    0.016621
+  min:    0.930240
+  max:    0.984027
+
+MAE:
+  mean:   0.012233
+  median: 0.012004
+  std:    0.004105
+  min:    0.006188
+  max:    0.023489
+
+LPIPS:
+  mean:   0.021177
+  median: 0.016494
+  std:    0.011306
+  min:    0.007677
+  max:    0.046146
+
+=== ITERATION 2250 SUMMARY ===
+MSE:
+  mean:   0.002507
+  median: 0.002084
+  std:    0.001537
+  min:    0.000382
+  max:    0.006623
+
+PSNR:
+  mean:   26.840107
+  median: 26.810174
+  std:    2.817036
+  min:    21.789518
+  max:    34.177811
+
+SSIM:
+  mean:   0.969313
+  median: 0.977923
+  std:    0.018414
+  min:    0.923949
+  max:    0.985067
+
+MAE:
+  mean:   0.012678
+  median: 0.012425
+  std:    0.003892
+  min:    0.007311
+  max:    0.021976
+
+LPIPS:
+  mean:   0.022289
+  median: 0.019742
+  std:    0.012655
+  min:    0.006517
+  max:    0.058038
+
+=== ITERATION 2500 SUMMARY ===
+MSE:
+  mean:   0.002182
+  median: 0.001769
+  std:    0.001631
+  min:    0.000339
+  max:    0.007453
+
+PSNR:
+  mean:   27.640588
+  median: 27.524097
+  std:    3.050648
+  min:    21.276421
+  max:    34.701836
+
+SSIM:
+  mean:   0.970917
+  median: 0.978999
+  std:    0.017808
+  min:    0.927409
+  max:    0.986201
+
+MAE:
+  mean:   0.011418
+  median: 0.011381
+  std:    0.004028
+  min:    0.005657
+  max:    0.021606
+
+LPIPS:
+  mean:   0.019662
+  median: 0.015506
+  std:    0.012868
+  min:    0.006098
+  max:    0.056969
+
+=== ITERATION 2750 SUMMARY ===
+MSE:
+  mean:   0.002020
+  median: 0.001942
+  std:    0.001442
+  min:    0.000329
+  max:    0.006560
+
+PSNR:
+  mean:   28.184930
+  median: 27.120143
+  std:    3.569975
+  min:    21.830688
+  max:    34.826366
+
+SSIM:
+  mean:   0.971781
+  median: 0.978843
+  std:    0.017159
+  min:    0.931437
+  max:    0.988157
+
+MAE:
+  mean:   0.011797
+  median: 0.011421
+  std:    0.003815
+  min:    0.006885
+  max:    0.020820
+
+LPIPS:
+  mean:   0.018876
+  median: 0.017897
+  std:    0.011293
+  min:    0.005492
+  max:    0.043861
+
+=== ITERATION 3000 SUMMARY ===
+MSE:
+  mean:   0.002129
+  median: 0.001885
+  std:    0.001419
+  min:    0.000407
+  max:    0.007451
+
+PSNR:
+  mean:   27.420219
+  median: 27.248128
+  std:    2.440721
+  min:    21.277611
+  max:    33.901783
+
+SSIM:
+  mean:   0.971783
+  median: 0.978487
+  std:    0.015580
+  min:    0.933224
+  max:    0.986906
+
+MAE:
+  mean:   0.011055
+  median: 0.010638
+  std:    0.003433
+  min:    0.006654
+  max:    0.021239
+
+LPIPS:
+  mean:   0.019133
+  median: 0.015032
+  std:    0.010234
+  min:    0.007298
+  max:    0.040367
+
+=== TOP-5 BEST SSIM (OVERALL) ===
+  1. iter=2750 id=  4 SSIM=0.9882 LPIPS=0.0068
+  2. iter=3000 id=  4 SSIM=0.9869 LPIPS=0.0073
+  3. iter=2750 id=  7 SSIM=0.9865 LPIPS=0.0081
+  4. iter=2750 id=  3 SSIM=0.9864 LPIPS=0.0055
+  5. iter=2500 id=  4 SSIM=0.9862 LPIPS=0.0079
+
+=== TOP-5 WORST SSIM (OVERALL) ===
+  1. iter=1000 id= 18 SSIM=0.9248 LPIPS=0.0418
+  2. iter=750 id= 18 SSIM=0.9244 LPIPS=0.0442
+  3. iter=2250 id= 11 SSIM=0.9239 LPIPS=0.0580
+  4. iter=  0 id= 18 SSIM=0.9222 LPIPS=0.0425
+  5. iter=  0 id= 11 SSIM=0.9215 LPIPS=0.0569
+
+=== TOP-5 BEST LPIPS (OVERALL) ===
+  1. iter=1750 id= 12 LPIPS=0.0049 SSIM=0.9860
+  2. iter=2750 id=  3 LPIPS=0.0055 SSIM=0.9864
+  3. iter=2750 id= 12 LPIPS=0.0057 SSIM=0.9850
+  4. iter=2750 id= 19 LPIPS=0.0058 SSIM=0.9861
+  5. iter=1750 id=  3 LPIPS=0.0059 SSIM=0.9854
+
+=== TOP-5 WORST LPIPS (OVERALL) ===
+  1. iter=750 id= 11 LPIPS=0.0565 SSIM=0.9342
+  2. iter=  0 id= 11 LPIPS=0.0569 SSIM=0.9215
+  3. iter=2500 id= 11 LPIPS=0.0570 SSIM=0.9274
+  4. iter=2250 id= 11 LPIPS=0.0580 SSIM=0.9239
+  5. iter=250 id= 11 LPIPS=0.0584 SSIM=0.9315
