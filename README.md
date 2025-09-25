@@ -51,7 +51,7 @@ ssh ubuntu@<your-cluster-ip>
 
 2. **Clone the repository**:
 ```bash
-git clone https://github.com/krishnanj/flux_kontext_lyrics.git
+git clone https://github.com/krishnanj/flux_kontext_cfd.git
 cd flux_kontext_lyrics
 ```
 
@@ -166,13 +166,6 @@ We use multiple metrics to evaluate the surrogate model performance:
 - **Side-by-side Comparisons**: Generated vs ground truth visualizations
 - **Error Distribution Analysis**: Identify systematic biases or failure modes
 
-### Success Criteria
-
-A successful surrogate model should achieve:
-- **SSIM > 0.8**: High structural similarity to ground truth
-- **LPIPS < 0.2**: Low perceptual difference
-- **PSNR > 25 dB**: Good image quality
-- **Physical Consistency**: Generated flow patterns should follow fluid dynamics principles
 
 ## Requirements
 
@@ -218,26 +211,6 @@ The model will be automatically downloaded on first use (approximately 20GB).
 - GPU acceleration significantly improves performance
 - The model processes images at 1024x1024 resolution by default
 
-## File Structure
-
-```
-flux_kontext_lyrics/
-├── build_kontext_ds.py                    # Dataset generation script
-├── analyze_samples.py                     # Analysis and evaluation script
-├── main.py                                # Legacy image editing script
-├── requirements.txt                       # Python dependencies
-├── kontext_run_small_new/                 # Generated training dataset
-│   ├── before/                           # Input images
-│   ├── after/                            # Target images with captions
-│   ├── test/                             # Test input images
-│   ├── test_results/                     # Ground truth test images
-│   └── kontext_lora_config.yaml          # Training configuration
-├── output_fludyn/                        # Training outputs
-│   ├── samples/                          # Generated samples
-│   └── analysis/                         # Analysis results
-├── ai-toolkit/                           # Ostris AI toolkit (cloned)
-└── README.md                             # This file
-```
 
 ## Contributing
 
@@ -246,7 +219,3 @@ flux_kontext_lyrics/
 3. Make your changes
 4. Test thoroughly
 5. Submit a pull request
-
-## License
-
-This project uses the FLUX.1-Kontext-dev model which has its own licensing terms. Please review the model's license on Hugging Face before use.
